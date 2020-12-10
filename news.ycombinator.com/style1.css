@@ -1,0 +1,49 @@
+@-moz-document domain("news.ycombinator.com") {
+    #hnmain { background-color: #0d1117; }
+    
+    body {
+        background-color: #0d1117
+    }
+    
+      a:link.storylink,
+      #hnmain > tbody > tr:first-child > td a,
+      .commtext, .commtext a:link,
+      td {
+        color: #fafafa;
+      }
+    
+      #hnmain > tbody > tr:first-child > td { background-color: #313030; }
+    
+      a:link,
+      .sitebit, .subtext, .sitestr, .subtext a:link,
+      .rank, a.morelink,
+      .yclinks a,
+      .comhead a:link, .comhead,
+      .hnmore a:link, .reply a:link {
+        color: #8c96ac;
+      }
+    
+      .pagetop { color: #d9d9d9; }
+    
+      a:visited {
+        color: #979cf4;
+      }
+    
+      .votearrow {
+        overflow: visible;
+        position: relative;
+      }
+    
+      .votearrow::before {
+        content: "";
+        width: 0;
+        height: 0;
+        left: 1px;
+        top: 3px;
+        display: block;
+        position: absolute;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-bottom: 7px solid #bebfd1;
+    }
+    }
